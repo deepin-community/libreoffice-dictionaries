@@ -1,0 +1,95 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+define rename_hunspell_files
+cd $(CURDIR)/debian/hunspell-$(strip $(1))/usr/share/hunspell; \
+mv -v $(strip $(2)).aff $(strip $(3)).aff; mv $(strip $(2)).dic $(strip $(3)).dic
+endef
+
+define rename_hyphen_files
+cd $(CURDIR)/debian/hyphen-$(strip $(1))/usr/share/hyphen; \
+mv -v hyph_$(strip $(2)).dic hyph_$(strip $(3)).dic
+endef
+
+define rename_mythes_files
+cd $(CURDIR)/debian/mythes-$(strip $(1))/usr/share/mythes; \
+mv -v $(strip $(2)).dat $(strip $(3)).dat; mv $(strip $(2)).idx $(strip $(3)).idx
+endef
+
+define link_hyphen
+dh_link -phyphen-$(strip $(1)) usr/share/hyphen/hyph_$(strip $(3)).dic usr/share/hyphen/hyph_$(strip $(2)).dic
+endef
+
+include debian/rules.install
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cd dictionaries/cs_CZ/thesaurus && \
+		./dictionary-to-thesaurus.py en-cs.txt blacklist.txt > ../thes_cs_CZ.dat
+	for dat in `find dictionaries -type f -name "*.dat"`; do \
+		/usr/share/mythes/th_gen_idx.pl -o $${dat%dat}idx < $${dat}; \
+	done
+	dh_auto_build $@
+
+override_dh_install: install_files
+	dh_install
+
+	$(call rename_hunspell_files,  es,  es,            es_ES )
+	$(call rename_hunspell_files,  gug, gug,           gug_PY )
+	$(call rename_hunspell_files,  is,  is,            is_IS )
+	$(call rename_hunspell_files,  lt,  lt,            lt_LT )
+	$(call rename_hunspell_files,  sr,  sr,            sr_RS )
+	$(call rename_hunspell_files,  sr,  sr-Latn,       sr_Latn_RS )
+
+	$(call rename_hyphen_files,    ca,  ca,            ca_ES )
+	$(call rename_hyphen_files,    es,  es,            es_ES )
+	$(call rename_hyphen_files,    gl,  gl,            gl_ES )
+	$(call rename_hyphen_files,    is,  is,            is_IS )
+	$(call rename_hyphen_files,    lt,  lt,            lt_LT )
+	$(call rename_hyphen_files,    sr,  sr,            sr_RS )
+	$(call rename_hyphen_files,    sr,  sr-Latn,       sr-Latn_RS )
+	$(call rename_hyphen_files,    sv,  sv,            sv_SE )
+
+	$(call rename_mythes_files,    ar,     th_ar,         th_ar_EG_v2 )
+	$(call rename_mythes_files,    cs,     thes_cs_CZ,    th_cs_CZ_v2 )
+	$(call rename_mythes_files,    es,     th_es_v2,      th_es_ES_v2 )
+	$(call rename_mythes_files,    gl,     thesaurus_gl,  th_gl_ES_v2 )
+	$(call rename_mythes_files,    gug,    th_gug_PY,     th_gug_PY_v2 )
+	$(call rename_mythes_files,    is,     th_is,         th_is_IS_v2 )
+	$(call rename_mythes_files,    pt-pt,  th_pt_PT,   th_pt_PT_v2 )
+	$(call rename_mythes_files,    sv,     th_sv_SE,      th_sv_SE_v2 )
+	$(call rename_mythes_files,    uk,     th_uk_UA,      th_uk_UA_v2 )
+	$(call rename_mythes_files,    ru,     th_ru_RU_M_aot_and_v2,      th_ru_RU_v2 )
+
+	# here are only links doing "xx → xx_XX", more links are done with
+	# .links files as well.
+	$(call link_hyphen, af,    af,         af_ZA )
+	$(call link_hyphen, cs,    cs,         cs_CZ )
+	$(call link_hyphen, da,    da,         da_DK )
+	$(call link_hyphen, de,    de,         de_DE )
+	$(call link_hyphen, el,    el,         el_GR )
+	$(call link_hyphen, en-gb, en_Latn_GB, en_GB )
+	$(call link_hyphen, hr,    hr,         hr_HR )
+	$(call link_hyphen, hu,    hu,         hu_HU )
+	$(call link_hyphen, it,    it,         it_IT )
+	$(call link_hyphen, lt,    lt,         lt_LT )
+	$(call link_hyphen, nl,    nl,         nl_NL )
+	$(call link_hyphen, pt-br, pt_Latn_BR, pt_BR )
+	$(call link_hyphen, pt-pt, pt,         pt_PT )
+	$(call link_hyphen, pt-pt, pt_Latn_PT, pt_PT )
+	$(call link_hyphen, ro,    ro,         ro_RO )
+	$(call link_hyphen, sk,    sk,         sk_SK )
+	$(call link_hyphen, sl,    sl,         sl_SI )
+	$(call link_hyphen, uk,    uk,         uk_UA )
+	$(call link_hyphen, zu,    zu,         zu_ZA )
+
+
+override_dh_clean:
+	find dictionaries/ -type f -name '*.idx' -delete
+	rm -rf dictionaries/cs_CZ/thes_cs_CZ.dat
+	dh_clean
+
+override_dh_installchangelogs:
+	dh_installchangelogs ChangeLog-dictionaries

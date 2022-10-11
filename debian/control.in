@@ -1,0 +1,81 @@
+Source: libreoffice-dictionaries
+Section: text
+Priority: optional
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Uploaders: Chris Halls <halls@debian.org>,
+           Mattia Rizzolo <mattia@debian.org>,
+           Rene Engelhard <rene@debian.org>
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: unzip, libmythes-dev, python3
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://wiki.documentfoundation.org/Language_support_of_LibreOffice
+Vcs-Git: https://salsa.debian.org/libreoffice-team/libreoffice/libreoffice-dictionaries.git
+Vcs-Browser: https://salsa.debian.org/libreoffice-team/libreoffice/libreoffice-dictionaries
+
+Package: libreoffice-lightproof-pt-br
+Provides: libreoffice-grammarcheck, libreoffice-grammarcheck-pt-br
+Depends: python3-uno, libreoffice-core, ${misc:Depends}
+Architecture: all
+Description: Lightproof grammar checker for LibreOffice (Brazilian Portuguese)
+ Lightproof is a grammar checker extension generator in Python.
+ The result of the generation is a single Lightproof or vendor specific
+ grammar checker language package.
+ .
+ This package contains a Lightproof extension for LibreOffice for
+ Brazlian Portuguese.
+
+Package: myspell-hr
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-hr, ${misc:Depends}
+Description: Croatian dictionary for hunspell - dummy transitional package
+ This is the Croatian dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-hr; it can be
+ safely removed once installed.
+
+Package: myspell-pl
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-pl, ${misc:Depends}
+Description: Polish dictionary for hunspell - dummy transitional package
+ This is the Polish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-hr; it can be
+ safely removed once installed.
+
+Package: myspell-sv-se
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-sv, ${misc:Depends}
+Description: Swedish dictionary for hunspell - dummy transitional package
+ This is the Swedish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-sv; it can be
+ safely removed once installed.
+
+Package: hunspell-sv-se
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-sv, ${misc:Depends}
+Description: Swedish dictionary for hunspell - dummy transitional package
+ This is the Swedish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-sv; it can be
+ safely removed once installed.
+
+Package: hunspell-gl-es
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-gl, ${misc:Depends}
+Description: Galician dictionary for hunspell - dummy transitional package
+ This is the Galician dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-gl; it can be
+ safely removed once installed.

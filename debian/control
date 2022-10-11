@@ -1,0 +1,1532 @@
+# Automatically generated.  DO NOT EDIT!
+# Edit debian/control.in and debian/helper.py instead.
+# Run `./helper.py control` to regenerate this.
+Source: libreoffice-dictionaries
+Section: text
+Priority: optional
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Uploaders: Chris Halls <halls@debian.org>,
+           Mattia Rizzolo <mattia@debian.org>,
+           Rene Engelhard <rene@debian.org>
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: unzip, libmythes-dev, python3
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://wiki.documentfoundation.org/Language_support_of_LibreOffice
+Vcs-Git: https://salsa.debian.org/libreoffice-team/libreoffice/libreoffice-dictionaries.git
+Vcs-Browser: https://salsa.debian.org/libreoffice-team/libreoffice/libreoffice-dictionaries
+
+Package: libreoffice-lightproof-pt-br
+Provides: libreoffice-grammarcheck, libreoffice-grammarcheck-pt-br
+Depends: python3-uno, libreoffice-core, ${misc:Depends}
+Architecture: all
+Description: Lightproof grammar checker for LibreOffice (Brazilian Portuguese)
+ Lightproof is a grammar checker extension generator in Python.
+ The result of the generation is a single Lightproof or vendor specific
+ grammar checker language package.
+ .
+ This package contains a Lightproof extension for LibreOffice for
+ Brazlian Portuguese.
+
+Package: myspell-hr
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-hr, ${misc:Depends}
+Description: Croatian dictionary for hunspell - dummy transitional package
+ This is the Croatian dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-hr; it can be
+ safely removed once installed.
+
+Package: myspell-pl
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-pl, ${misc:Depends}
+Description: Polish dictionary for hunspell - dummy transitional package
+ This is the Polish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-hr; it can be
+ safely removed once installed.
+
+Package: myspell-sv-se
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-sv, ${misc:Depends}
+Description: Swedish dictionary for hunspell - dummy transitional package
+ This is the Swedish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-sv; it can be
+ safely removed once installed.
+
+Package: hunspell-sv-se
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-sv, ${misc:Depends}
+Description: Swedish dictionary for hunspell - dummy transitional package
+ This is the Swedish dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-sv; it can be
+ safely removed once installed.
+
+Package: hunspell-gl-es
+Section: oldlibs
+Architecture: all
+Multi-Arch: foreign
+Depends: hunspell-gl, ${misc:Depends}
+Description: Galician dictionary for hunspell - dummy transitional package
+ This is the Galician dictionary for use with the hunspell spellchecker.
+ .
+ This package is here just to allow the transition to hunspell-gl; it can be
+ safely removed once installed.
+
+Package: hyphen-af
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-af
+Description: Afrikaans hyphenation patterns
+ This package contains the Afrikaans hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-af
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-af
+Breaks: myspell-af (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-af (<< 1:5.0.1+dfsg-1)
+Description: Afrikaans dictionary for hunspell
+ This is the Afrikaans dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-ar
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-ar
+Description: Arabic Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Arabic thesaurus for LibreOffice.
+
+Package: hyphen-bg
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-bg
+Description: Bulgarian hyphenation patterns
+ This package contains the Bulgarian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-bg
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-bg
+Breaks: myspell-bg (<< 4.1-5)
+Replaces: myspell-bg (<< 4.1-5)
+Description: Bulgarian dictionary for hunspell
+ This is the Bulgarian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-bg
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-bg
+Description: Bulgarian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Bulgarian thesaurus for LibreOffice.
+
+Package: hunspell-bn
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-bn
+Description: Bengali dictionary for hunspell
+ This is the Bengali dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-bs
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-bs
+Description: Bosnian dictionary for hunspell
+ This is the Bosnian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-ca
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-ca
+Description: Catalan hyphenation patterns
+ This package contains the Catalan hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: mythes-ca
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-ca
+Description: Catalan Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Catalan thesaurus for LibreOffice.
+
+Package: hyphen-cs
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-cs
+Description: Czech hyphenation patterns
+ This package contains the Czech hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-cs
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-cs
+Conflicts: myspell-cs
+Description: Czech dictionary for hunspell
+ This is the Czech dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-cs
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-cs
+Description: Czech Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Czech thesaurus for LibreOffice.
+
+Package: hyphen-da
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-da
+Description: Danish hyphenation patterns
+ This package contains the Danish hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-da
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-da
+Conflicts: myspell-da
+Description: Danish dictionary for hunspell
+ This is the Danish dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-da
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-da
+Description: Danish Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Danish thesaurus for LibreOffice.
+
+Package: hunspell-de-at-frami
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-de-at-frami
+Conflicts: myspell-de-at, hunspell-de-at
+Description: German (Austria) dictionary for hunspell ("frami" version)
+ This is the German (Austria) dictionary for use with the hunspell
+ spellchecker.
+ .
+ This package contains a enhanced version by Franz Michael Baumann with
+ some words missing in the base dictionary or not (yet) belonging to the
+ "core" German words.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-de-ch-frami
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-de-ch-frami
+Conflicts: myspell-de-ch, hunspell-de-ch
+Description: German (Switzerland) dictionary for hunspell ("frami" version)
+ This is the German (Switzerland) dictionary for use with the hunspell
+ spellchecker.
+ .
+ This package contains a enhanced version by Franz Michael Baumann with
+ some words missing in the base dictionary or not (yet) belonging to the
+ "core" German words.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-de-de-frami
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-de-de-frami
+Conflicts: myspell-de-de, hunspell-de-de
+Description: German dictionary for hunspell ("frami" version)
+ This is the German (Belgium, Germany, Luxemburg) dictionary for use with the
+ hunspell spellchecker.
+ .
+ This package contains a enhanced version by Franz Michael Baumann with
+ some words missing in the base dictionary or not (yet) belonging to the
+ "core" German words.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-de
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-de
+Description: German hyphenation patterns
+ This package contains the German hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hyphen-el
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-el
+Description: Modern Greek hyphenation patterns
+ This package contains the Modern Greek hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-el
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-el
+Conflicts: myspell-el-gr
+Description: Modern Greek dictionary for hunspell
+ This is the Modern Greek dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-en-za
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-en-za
+Breaks: myspell-en-za (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-en-za (<< 1:5.0.1+dfsg-1)
+Description: English (South Africa) dictionary for hunspell
+ This is the English (South Africa) dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-en-us
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-en-us
+Description: English (USA) Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the English (USA) thesaurus for LibreOffice.
+
+Package: hyphen-en-gb
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-en-gb, hyphen-en-au, hyphen-en-za
+Description: English (GB) hyphenation patterns
+ This package contains the English (GB) hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-en-gb
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-en-gb
+Breaks: myspell-en-gb (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-en-gb (<< 1:5.0.1+dfsg-1)
+Description: English (GB) dictionary for hunspell
+ This is the English (GB) dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-es
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-es
+Description: Spanish hyphenation patterns
+ This package contains the Spanish hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-es
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-es
+Conflicts: myspell-es
+Description: Spanish dictionary for hunspell
+ This is the Spanish dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-es
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-es
+Description: Spanish Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Spanish thesaurus for LibreOffice.
+
+Package: hyphen-fr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-fr
+Description: French hyphenation patterns
+ This package contains the French hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: mythes-fr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-fr
+Description: French Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the French thesaurus for LibreOffice.
+
+Package: hunspell-gd
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-gd
+Conflicts: myspell-gd
+Description: Scottish Gaelic dictionary for hunspell
+ This is the Scottish Gaelic dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-gl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-gl
+Description: Galician hyphenation patterns
+ This package contains the Galician hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-gl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-gl
+Description: Galician dictionary for hunspell
+ This is the Galician dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-gl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-gl
+Description: Galician Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Galician thesaurus for LibreOffice.
+
+Package: hunspell-gu
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-gu
+Description: Gujarati dictionary for hunspell
+ This is the Gujarati dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-gug
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-gug
+Description: Guarani dictionary for hunspell
+ This is the Guarani dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-gug
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-gug
+Description: Guarani Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Guarani thesaurus for LibreOffice.
+
+Package: hunspell-he
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-he
+Conflicts: myspell-he
+Description: Hebrew dictionary for hunspell
+ This is the Hebrew dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-hi
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-hi
+Description: Hindi dictionary for hunspell
+ This is the Hindi dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-hr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-hr
+Description: Croatian hyphenation patterns
+ This package contains the Croatian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-hr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-hr
+Breaks: myspell-hr (<< 1:6.0.3-2)
+Replaces: myspell-hr (<< 1:6.0.3-2)
+Description: Croatian dictionary for hunspell
+ This is the Croatian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-hu
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-hu
+Description: Hungarian hyphenation patterns
+ This package contains the Hungarian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-hu
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-hu
+Conflicts: myspell-hu
+Description: Hungarian dictionary for hunspell
+ This is the Hungarian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-hu
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-hu
+Description: Hungarian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Hungarian thesaurus for LibreOffice.
+
+Package: hyphen-id
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-id
+Description: Indonesian hyphenation patterns
+ This package contains the Indonesian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-id
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-id
+Description: Indonesian dictionary for hunspell
+ This is the Indonesian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-id
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-id
+Description: Indonesian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Indonesian thesaurus for LibreOffice.
+
+Package: hyphen-is
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-is
+Description: Icelandic hyphenation patterns
+ This package contains the Icelandic hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-is
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-is
+Description: Icelandic dictionary for hunspell
+ This is the Icelandic dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-is
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-is
+Description: Icelandic Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Icelandic thesaurus for LibreOffice.
+
+Package: hyphen-it
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-it
+Description: Italian hyphenation patterns
+ This package contains the Italian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-it
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-it
+Breaks: myspell-it (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-it (<< 1:5.0.1+dfsg-1)
+Description: Italian dictionary for hunspell
+ This is the Italian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-it
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-it
+Description: Italian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Italian thesaurus for LibreOffice.
+
+Package: hunspell-kmr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-kmr, hunspell-ku
+Breaks: myspell-ku (<< 1:5.1.3-2)
+Replaces: myspell-ku (<< 1:5.1.3-2)
+Description: Kurmanji dictionary for hunspell
+ This is the Kurmanji dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-lo
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-lo
+Description: Laotian dictionary for hunspell
+ This is the Laotian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-lt
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-lt
+Breaks: openoffice.org-hyphenation-lt (<< 1.2.1-6)
+Replaces: openoffice.org-hyphenation-lt (<< 1.2.1-6)
+Description: Lithuanian hyphenation patterns
+ This package contains the Lithuanian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-lt
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-lt
+Breaks: myspell-lt (<< 1.2.1-6)
+Replaces: myspell-lt (<< 1.2.1-6)
+Description: Lithuanian dictionary for hunspell
+ This is the Lithuanian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-lv
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-lv
+Description: Latvian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Latvian thesaurus for LibreOffice.
+
+Package: hyphen-mn
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-mn
+Description: Mongolian hyphenation patterns
+ This package contains the Mongolian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-mn
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-mn
+Description: Mongolian dictionary for hunspell
+ This is the Mongolian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-ne
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-ne
+Description: Nepalese dictionary for hunspell
+ This is the Nepalese dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-ne
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-ne
+Description: Nepalese Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Nepalese thesaurus for LibreOffice.
+
+Package: hyphen-nl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-nl
+Description: Dutch hyphenation patterns
+ This package contains the Dutch hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hyphen-no
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-no
+Conflicts: myspell-nb, myspell-nn
+Description: Norwegian hyphenation patterns
+ This package contains the Norwegian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-no
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-no
+Conflicts: myspell-nb, myspell-nn
+Description: Norwegian dictionary for hunspell
+ This is the Norwegian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-no
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-no
+Description: Norwegian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Norwegian thesaurus for LibreOffice.
+
+Package: hunspell-oc
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-oc
+Description: Occitan dictionary for hunspell
+ This is the Occitan dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-pl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-pl
+Breaks: myspell-pl (<< 1:6.1.0~beta1-2)
+Replaces: myspell-pl (<< 1:6.1.0~beta1-2)
+Description: Polish dictionary for hunspell
+ This is the Polish dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-pt-br
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-pt-br
+Description: Brazilian Portuguese hyphenation patterns
+ This package contains the Brazilian Portuguese hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-pt-br
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-pt-br
+Breaks: myspell-pt-br (<= 20131030-10)
+Replaces: myspell-pt-br (<= 20131030-10)
+Description: Brazilian Portuguese dictionary for hunspell
+ This is the Brazilian Portuguese dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-pt-pt
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-pt-pt
+Description: Portuguese hyphenation patterns
+ This package contains the Portuguese hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-pt-pt
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-pt-pt
+Breaks: myspell-pt-pt (<= 20091013-12)
+Replaces: myspell-pt-pt (<= 20091013-12)
+Description: Portuguese dictionary for hunspell
+ This is the Portuguese dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-pt-pt
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-pt-pt
+Description: Portuguese Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Portuguese thesaurus for LibreOffice.
+
+Package: hyphen-ro
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-ro
+Description: Romanian hyphenation patterns
+ This package contains the Romanian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-ro
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-ro
+Description: Romanian dictionary for hunspell
+ This is the Romanian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-ro
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-ro
+Description: Romanian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Romanian thesaurus for LibreOffice.
+
+Package: hunspell-ru
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-ru
+Breaks: myspell-ru (<= 0.99g5-21)
+Replaces: myspell-ru (<= 0.99g5-21)
+Description: Russian dictionary for hunspell
+ This is the Russian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-ru
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-ru
+Description: Russian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Russian thesaurus for LibreOffice.
+
+Package: hunspell-si
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-si
+Description: Sinhala dictionary for hunspell
+ This is the Sinhala dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-sk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-sk
+Description: Slovak hyphenation patterns
+ This package contains the Slovak hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-sk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-sk
+Conflicts: myspell-sk
+Description: Slovak dictionary for hunspell
+ This is the Slovak dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-sk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-sk
+Description: Slovak Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Slovak thesaurus for LibreOffice.
+
+Package: hyphen-sl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-sl
+Description: Slovene hyphenation patterns
+ This package contains the Slovene hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-sl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-sl
+Breaks: myspell-sl (<= 1.0-5)
+Replaces: myspell-sl (<= 1.0-5)
+Description: Slovene dictionary for hunspell
+ This is the Slovene dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-sl
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-sl
+Description: Slovene Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Slovene thesaurus for LibreOffice.
+
+Package: hyphen-sr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-sr
+Description: Serbian hyphenation patterns
+ This package contains the Serbian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-sr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-sr
+Description: Serbian dictionary for hunspell
+ This is the Serbian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-sv
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-sv
+Description: Swedish hyphenation patterns
+ This package contains the Swedish hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-sv
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-sv
+Breaks: hunspell-sv-se (<< 1:6.1.0~rc2-3)
+Replaces: hunspell-sv-se (<< 1:6.1.0~rc2-3)
+Description: Swedish dictionary for hunspell
+ This is the Swedish dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-sv
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-sv
+Description: Swedish Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Swedish thesaurus for LibreOffice.
+
+Package: hunspell-sw
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-sw
+Breaks: myspell-sw (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-sw (<< 1:5.0.1+dfsg-1)
+Description: Swahili dictionary for hunspell
+ This is the Swahili dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-te
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-te
+Description: Telugu dictionary for hunspell
+ This is the Telugu dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-th
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-th
+Breaks: myspell-th (<< 1:5.0.1+dfsg-1)
+Replaces: myspell-th (<< 1:5.0.1+dfsg-1)
+Description: Thai dictionary for hunspell
+ This is the Thai dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hunspell-tr
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-tr
+Description: Turkish dictionary for hunspell
+ This is the Turkish dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-uk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-uk
+Description: Ukrainian hyphenation patterns
+ This package contains the Ukrainian hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.
+
+Package: hunspell-uk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-uk
+Conflicts: myspell-uk
+Description: Ukrainian dictionary for hunspell
+ This is the Ukrainian dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: mythes-uk
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: mythes-thesaurus, mythes-thesaurus-uk
+Description: Ukrainian Thesaurus for LibreOffice
+ Libreoffice is a full-featured office productivity suite that provides a
+ near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Ukrainian thesaurus for LibreOffice.
+
+Package: hunspell-vi
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}, ${hunspell:Depends}
+Suggests: hunspell, libreoffice-writer
+Provides: hunspell-dictionary, hunspell-dictionary-vi
+Description: Vietnamese dictionary for hunspell
+ This is the Vietnamese dictionary for use with the hunspell
+ spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.
+
+Package: hyphen-zu
+Architecture: all
+Multi-Arch: foreign
+Depends: dictionaries-common, ${misc:Depends}
+Suggests: libreoffice-writer
+Provides: hyphen-hyphenation-patterns, hyphen-hyphenation-patterns-zu
+Description: Zulu hyphenation patterns
+ This package contains the Zulu hyphenation patterns.
+ .
+ You can use these patterns with programs which take advantage of libhyphen,
+ like LibreOffice.

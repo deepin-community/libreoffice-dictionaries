@@ -1,0 +1,25 @@
+Description: we package the pt-BR lightproof from here but we don't include the spelling and hyphen parts as they are in their correct, own packages. Don't
+add to the extension.
+Author: Rene Engelhard <rene@debian.org>
+Last-Update: 2016-07-22
+
+--- a/dictionaries/pt_BR/META-INF/manifest.xml
++++ b/dictionaries/pt_BR/META-INF/manifest.xml
+@@ -1,7 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE manifest:manifest PUBLIC "-//OpenOffice.org//DTD Manifest 1.0//EN" "Manifest.dtd">
+ <manifest:manifest xmlns:manifest="http://openoffice.org/2001/manifest">
+-  <manifest:file-entry manifest:media-type="application/vnd.sun.star.configuration-data" manifest:full-path="dictionaries.xcu"/>
+   <manifest:file-entry manifest:full-path="dialog/OptionsDialog.xcs" manifest:media-type="application/vnd.sun.star.configuration-schema"/>
+   <manifest:file-entry manifest:full-path="dialog/OptionsDialog.xcu" manifest:media-type="application/vnd.sun.star.configuration-data"/>
+   <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-components" manifest:full-path="Lightproof.components"/>
+diff --git a/dictionaries/pt_BR/package-description.txt b/dictionaries/pt_BR/package-description.txt
+index 9938a4d..179946b 100644
+--- a/dictionaries/pt_BR/package-description.txt
++++ b/dictionaries/pt_BR/package-description.txt
+@@ -1,4 +1,4 @@
+-﻿Ferramenta para verificação ortográfica, gramatical e de regras de hifenização.
++﻿Ferramenta para verificação gramatical.
+ Projeto mantido pela comunidade brasileira do LibreOffice.
+ 
+ Para entrar em contato, colocar sugestões ou sinalizar erros, acesse a página do projeto em

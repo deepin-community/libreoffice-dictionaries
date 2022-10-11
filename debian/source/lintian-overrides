@@ -1,0 +1,6 @@
+# autopkgtest doesn't really make sense for dictionaries...
+missing-tests-control
+
+# yeah, whatever.
+duplicate-short-description myspell-sv-se hunspell-sv-se
+duplicate-long-description myspell-sv-se hunspell-sv-se

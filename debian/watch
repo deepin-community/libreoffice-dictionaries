@@ -1,0 +1,3 @@
+version=3
+opts=dversionmangle=s/\+dfsg(\.\d+)?$//,repacksuffix=+dfsg,pgpsigurlmangle=s/$/.asc/ \
+https://download.documentfoundation.org/libreoffice/src/(\d.\d.\d)/libreoffice-dictionaries-(\d.\d.\d).\d.tar.xz

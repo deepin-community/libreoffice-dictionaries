@@ -1,0 +1,761 @@
+[
+    {
+        "639-1": "af_ZA",
+        "code": "af",
+        "hunspell": [
+            "af_ZA.aff",
+            "af_ZA.dic"
+        ],
+        "hyphen": [
+            "hyph_af_ZA.dic"
+        ],
+        "name": "Afrikaans"
+    },
+    {
+        "639-1": "an_ES",
+        "code": "an",
+        "hunspell": [
+            "an_ES.aff",
+            "an_ES.dic"
+        ],
+        "name": "Aragonese"
+    },
+    {
+        "639-1": "ar",
+        "code": "ar",
+        "hunspell": [
+            "ar.aff",
+            "ar.dic"
+        ],
+        "mythes": [
+            "th_ar.dat",
+            "th_ar.idx"
+        ],
+        "name": "Arabic"
+    },
+    {
+        "639-1": "be_BY",
+        "code": "be",
+        "hunspell": [
+            "be_BY.aff",
+            "be_BY.dic"
+        ],
+        "name": "Belarusian"
+    },
+    {
+        "639-1": "bg_BG",
+        "code": "bg",
+        "hunspell": [
+            "bg_BG.aff",
+            "bg_BG.dic"
+        ],
+        "hyphen": [
+            "hyph_bg_BG.dic"
+        ],
+        "mythes": [
+            "th_bg_BG_v2.dat",
+            "th_bg_BG_v2.idx"
+        ],
+        "name": "Bulgarian"
+    },
+    {
+        "639-1": "bn_BD",
+        "code": "bn",
+        "hunspell": [
+            "bn_BD.aff",
+            "bn_BD.dic"
+        ],
+        "name": "Bengali"
+    },
+    {
+        "639-1": "bo",
+        "code": "bo",
+        "hunspell": [
+            "bo.aff",
+            "bo.dic"
+        ],
+        "name": "Classic Tibetan"
+    },
+    {
+        "639-1": "br_FR",
+        "code": "br",
+        "hunspell": [
+            "br_FR.aff",
+            "br_FR.dic"
+        ],
+        "name": "Breton"
+    },
+    {
+        "639-1": "bs_BA",
+        "code": "bs",
+        "hunspell": [
+            "bs_BA.aff",
+            "bs_BA.dic"
+        ],
+        "name": "Bosnian"
+    },
+    {
+        "639-1": "ca",
+        "code": "ca",
+        "hunspell": [
+            "dictionaries/ca-valencia.aff",
+            "dictionaries/ca-valencia.dic",
+            "dictionaries/ca.aff",
+            "dictionaries/ca.dic"
+        ],
+        "hyphen": [
+            "dictionaries/hyph_ca.dic"
+        ],
+        "mythes": [
+            "dictionaries/th_ca_ES_v3.dat",
+            "dictionaries/th_ca_ES_v3.idx"
+        ],
+        "name": "Catalan"
+    },
+    {
+        "639-1": "cs_CZ",
+        "code": "cs",
+        "hunspell": [
+            "cs_CZ.aff",
+            "cs_CZ.dic"
+        ],
+        "hyphen": [
+            "hyph_cs_CZ.dic"
+        ],
+        "name": "Czech"
+    },
+    {
+        "639-1": "cs_CZ",
+        "code": "cs",
+        "mythes": [
+            "thes_cs_CZ.dat",
+            "thes_cs_CZ.idx"
+        ],
+        "name": "Czech"
+    },
+    {
+        "639-1": "da_DK",
+        "code": "da",
+        "hunspell": [
+            "da_DK.aff",
+            "da_DK.dic"
+        ],
+        "hyphen": [
+            "hyph_da_DK.dic"
+        ],
+        "mythes": [
+            "th_da_DK.dat",
+            "th_da_DK.idx"
+        ],
+        "name": "Danish"
+    },
+    {
+        "639-1": "de",
+        "code": "de-at-frami",
+        "hunspell": [
+            "de_AT_frami.aff",
+            "de_AT_frami.dic"
+        ],
+        "name": "German (Austria)",
+        "special": "Conflicts: myspell-de-at, hunspell-de-at\nDescription: German (Austria) dictionary for hunspell (\"frami\" version)\n This is the German (Austria) dictionary for use with the hunspell\n spellchecker.\n .\n This package contains a enhanced version by Franz Michael Baumann with\n some words missing in the base dictionary or not (yet) belonging to the\n \"core\" German words.\n .\n Hunspell is a spell checker and morphological analyzer library and program\n designed for languages with rich morphology and complex word compounding or\n character encoding. It is based on MySpell and features an Ispell-like\n terminal interface using Curses library, an Ispell pipe interface and a\n LibreOffice UNO module.\n"
+    },
+    {
+        "639-1": "de",
+        "code": "de-ch-frami",
+        "hunspell": [
+            "de_CH_frami.aff",
+            "de_CH_frami.dic"
+        ],
+        "name": "German (Switzerland)",
+        "special": "Conflicts: myspell-de-ch, hunspell-de-ch\nDescription: German (Switzerland) dictionary for hunspell (\"frami\" version)\n This is the German (Switzerland) dictionary for use with the hunspell\n spellchecker.\n .\n This package contains a enhanced version by Franz Michael Baumann with\n some words missing in the base dictionary or not (yet) belonging to the\n \"core\" German words.\n .\n Hunspell is a spell checker and morphological analyzer library and program\n designed for languages with rich morphology and complex word compounding or\n character encoding. It is based on MySpell and features an Ispell-like\n terminal interface using Curses library, an Ispell pipe interface and a\n LibreOffice UNO module.\n"
+    },
+    {
+        "639-1": "de",
+        "code": "de-de-frami",
+        "hunspell": [
+            "de_DE_frami.aff",
+            "de_DE_frami.dic"
+        ],
+        "name": "German",
+        "special": "Conflicts: myspell-de-de, hunspell-de-de\nDescription: German dictionary for hunspell (\"frami\" version)\n This is the German (Belgium, Germany, Luxemburg) dictionary for use with the\n hunspell spellchecker.\n .\n This package contains a enhanced version by Franz Michael Baumann with\n some words missing in the base dictionary or not (yet) belonging to the\n \"core\" German words.\n .\n Hunspell is a spell checker and morphological analyzer library and program\n designed for languages with rich morphology and complex word compounding or\n character encoding. It is based on MySpell and features an Ispell-like\n terminal interface using Curses library, an Ispell pipe interface and a\n LibreOffice UNO module.\n"
+    },
+    {
+        "639-1": "de",
+        "code": "de",
+        "hyphen": [
+            "hyph_de_DE.dic"
+        ],
+        "name": "German"
+    },
+    {
+        "639-1": "el_GR",
+        "code": "el",
+        "hunspell": [
+            "el_GR.aff",
+            "el_GR.dic"
+        ],
+        "hyphen": [
+            "hyph_el_GR.dic"
+        ],
+        "name": "Modern Greek"
+    },
+    {
+        "639-1": "en",
+        "code": "en-za",
+        "hunspell": [
+            "en_ZA.aff",
+            "en_ZA.dic"
+        ],
+        "name": "English (South Africa)"
+    },
+    {
+        "639-1": "en",
+        "code": "en-us",
+        "mythes": [
+            "th_en_US_v2.dat",
+            "th_en_US_v2.idx"
+        ],
+        "name": "English (USA)"
+    },
+    {
+        "639-1": "en",
+        "code": "en-gb",
+        "hunspell": [
+            "en_GB.aff",
+            "en_GB.dic"
+        ],
+        "hyphen": [
+            "hyph_en_GB.dic"
+        ],
+        "name": "English (GB)"
+    },
+    {
+        "639-1": "es",
+        "code": "es",
+        "hunspell": [
+            "es.aff",
+            "es.dic"
+        ],
+        "hyphen": [
+            "hyph_es.dic"
+        ],
+        "mythes": [
+            "th_es_v2.dat",
+            "th_es_v2.idx"
+        ],
+        "name": "Spanish"
+    },
+    {
+        "639-1": "et_EE",
+        "code": "et",
+        "hunspell": [
+            "et_EE.aff",
+            "et_EE.dic"
+        ],
+        "hyphen": [
+            "hyph_et_EE.dic"
+        ],
+        "name": "Estonian"
+    },
+    {
+        "639-1": "fr_FR",
+        "code": "fr",
+        "hunspell": [
+            "fr.aff",
+            "fr.dic"
+        ],
+        "hyphen": [
+            "hyph_fr.dic"
+        ],
+        "mythes": [
+            "thes_fr.dat",
+            "thes_fr.idx"
+        ],
+        "name": "French"
+    },
+    {
+        "639-1": "gd_GB",
+        "code": "gd",
+        "hunspell": [
+            "gd_GB.aff",
+            "gd_GB.dic"
+        ],
+        "name": "Scottish Gaelic"
+    },
+    {
+        "639-1": "gl",
+        "code": "gl",
+        "hunspell": [
+            "gl_ES.aff",
+            "gl_ES.dic"
+        ],
+        "hyphen": [
+            "hyph_gl.dic"
+        ],
+        "mythes": [
+            "thesaurus_gl.dat",
+            "thesaurus_gl.idx"
+        ],
+        "name": "Galician"
+    },
+    {
+        "639-1": "gu_IN",
+        "code": "gu",
+        "hunspell": [
+            "gu_IN.aff",
+            "gu_IN.dic"
+        ],
+        "name": "Gujarati"
+    },
+    {
+        "639-1": "gug",
+        "code": "gug",
+        "hunspell": [
+            "gug.aff",
+            "gug.dic"
+        ],
+        "mythes": [
+            "th_gug_PY.dat",
+            "th_gug_PY.idx"
+        ],
+        "name": "Guarani"
+    },
+    {
+        "639-1": "he_IL",
+        "code": "he",
+        "hunspell": [
+            "he_IL.aff",
+            "he_IL.dic"
+        ],
+        "name": "Hebrew"
+    },
+    {
+        "639-1": "hi_IN",
+        "code": "hi",
+        "hunspell": [
+            "hi_IN.aff",
+            "hi_IN.dic"
+        ],
+        "name": "Hindi"
+    },
+    {
+        "639-1": "hr_HR",
+        "code": "hr",
+        "hunspell": [
+            "hr_HR.aff",
+            "hr_HR.dic"
+        ],
+        "hyphen": [
+            "hyph_hr_HR.dic"
+        ],
+        "name": "Croatian"
+    },
+    {
+        "639-1": "hu_HU",
+        "code": "hu",
+        "hunspell": [
+            "hu_HU.aff",
+            "hu_HU.dic"
+        ],
+        "hyphen": [
+            "hyph_hu_HU.dic"
+        ],
+        "mythes": [
+            "th_hu_HU_v2.dat",
+            "th_hu_HU_v2.idx"
+        ],
+        "name": "Hungarian"
+    },
+    {
+        "639-1": "id",
+        "code": "id",
+        "hunspell": [
+            "id_ID.aff",
+            "id_ID.dic"
+        ],
+        "hyphen": [
+            "hyph_id_ID.dic"
+        ],
+        "mythes": [
+            "th_id_ID_v2.dat",
+            "th_id_ID_v2.idx"
+        ],
+        "name": "Indonesian"
+    },
+    {
+        "639-1": "is",
+        "code": "is",
+        "hunspell": [
+            "is.aff",
+            "is.dic"
+        ],
+        "hyphen": [
+            "hyph_is.dic"
+        ],
+        "mythes": [
+            "th_is.dat",
+            "th_is.idx"
+        ],
+        "name": "Icelandic"
+    },
+    {
+        "639-1": "it_IT",
+        "code": "it",
+        "hunspell": [
+            "it_IT.aff",
+            "it_IT.dic"
+        ],
+        "hyphen": [
+            "hyph_it_IT.dic"
+        ],
+        "mythes": [
+            "th_it_IT_v2.dat",
+            "th_it_IT_v2.idx"
+        ],
+        "name": "Italian"
+    },
+    {
+        "639-1": "kmr_Latn",
+        "code": "kmr",
+        "hunspell": [
+            "kmr_Latn.aff",
+            "kmr_Latn.dic"
+        ],
+        "name": "Kurmanji"
+    },
+    {
+        "639-1": "lo_LA",
+        "code": "lo",
+        "hunspell": [
+            "lo_LA.aff",
+            "lo_LA.dic"
+        ],
+        "name": "Laotian"
+    },
+    {
+        "639-1": "lt_LT",
+        "code": "lt",
+        "hunspell": [
+            "lt.aff",
+            "lt.dic"
+        ],
+        "hyphen": [
+            "hyph_lt.dic"
+        ],
+        "name": "Lithuanian"
+    },
+    {
+        "639-1": "lv_LV",
+        "code": "lv",
+        "hunspell": [
+            "lv_LV.aff",
+            "lv_LV.dic"
+        ],
+        "hyphen": [
+            "hyph_lv_LV.dic"
+        ],
+        "mythes": [
+            "th_lv_LV_v2.dat",
+            "th_lv_LV_v2.idx"
+        ],
+        "name": "Latvian"
+    },
+    {
+        "639-1": "mn_MN",
+        "code": "mn",
+        "hunspell": [
+            "mn_MN.aff",
+            "mn_MN.dic"
+        ],
+        "hyphen": [
+            "hyph_mn_MN.dic"
+        ],
+        "name": "Mongolian"
+    },
+    {
+        "639-1": "ne_NP",
+        "code": "ne",
+        "hunspell": [
+            "ne_NP.aff",
+            "ne_NP.dic"
+        ],
+        "mythes": [
+            "th_ne_NP_v2.dat",
+            "th_ne_NP_v2.idx"
+        ],
+        "name": "Nepalese"
+    },
+    {
+        "639-1": "nl_NL",
+        "code": "nl",
+        "hunspell": [
+            "nl_NL.aff",
+            "nl_NL.dic"
+        ],
+        "hyphen": [
+            "hyph_nl_NL.dic"
+        ],
+        "name": "Dutch"
+    },
+    {
+        "639-1": "no",
+        "code": "no",
+        "hunspell": [
+            "nb_NO.aff",
+            "nb_NO.dic",
+            "nn_NO.aff",
+            "nn_NO.dic"
+        ],
+        "hyphen": [
+            "hyph_nb_NO.dic",
+            "hyph_nn_NO.dic"
+        ],
+        "mythes": [
+            "th_nb_NO_v2.dat",
+            "th_nb_NO_v2.idx",
+            "th_nn_NO_v2.dat",
+            "th_nn_NO_v2.idx"
+        ],
+        "name": "Norwegian"
+    },
+    {
+        "639-1": "oc_FR",
+        "code": "oc",
+        "hunspell": [
+            "oc_FR.aff",
+            "oc_FR.dic"
+        ],
+        "name": "Occitan"
+    },
+    {
+        "639-1": "pl_PL",
+        "code": "pl",
+        "hunspell": [
+            "pl_PL.aff",
+            "pl_PL.dic"
+        ],
+        "hyphen": [
+            "hyph_pl_PL.dic"
+        ],
+        "mythes": [
+            "th_pl_PL_v2.dat",
+            "th_pl_PL_v2.idx"
+        ],
+        "name": "Polish"
+    },
+    {
+        "639-1": "pt_BR",
+        "code": "pt-br",
+        "hunspell": [
+            "pt_BR.aff",
+            "pt_BR.dic"
+        ],
+        "hyphen": [
+            "hyph_pt_BR.dic"
+        ],
+        "name": "Brazilian Portuguese"
+    },
+    {
+        "639-1": "pt_PT",
+        "code": "pt-pt",
+        "hunspell": [
+            "pt_PT.aff",
+            "pt_PT.dic"
+        ],
+        "hyphen": [
+            "hyph_pt_PT.dic"
+        ],
+        "mythes": [
+            "th_pt_PT.dat",
+            "th_pt_PT.idx"
+        ],
+        "name": "Portuguese"
+    },
+    {
+        "639-1": "ro",
+        "code": "ro",
+        "hunspell": [
+            "ro_RO.aff",
+            "ro_RO.dic"
+        ],
+        "hyphen": [
+            "hyph_ro_RO.dic"
+        ],
+        "mythes": [
+            "th_ro_RO_v2.dat",
+            "th_ro_RO_v2.idx"
+        ],
+        "name": "Romanian"
+    },
+    {
+        "639-1": "ru_RU",
+        "code": "ru",
+        "hunspell": [
+            "ru_RU.aff",
+            "ru_RU.dic"
+        ],
+        "hyphen": [
+            "hyph_ru_RU.dic"
+        ],
+        "mythes": [
+            "th_ru_RU_M_aot_and_v2.dat",
+            "th_ru_RU_M_aot_and_v2.idx"
+        ],
+        "name": "Russian"
+    },
+    {
+        "639-1": "si_LK",
+        "code": "si",
+        "hunspell": [
+            "si_LK.aff",
+            "si_LK.dic"
+        ],
+        "name": "Sinhala"
+    },
+    {
+        "639-1": "sk_SK",
+        "code": "sk",
+        "hunspell": [
+            "sk_SK.aff",
+            "sk_SK.dic"
+        ],
+        "hyphen": [
+            "hyph_sk_SK.dic"
+        ],
+        "mythes": [
+            "th_sk_SK_v2.dat",
+            "th_sk_SK_v2.idx"
+        ],
+        "name": "Slovak"
+    },
+    {
+        "639-1": "sl_SI",
+        "code": "sl",
+        "hunspell": [
+            "sl_SI.aff",
+            "sl_SI.dic"
+        ],
+        "hyphen": [
+            "hyph_sl_SI.dic"
+        ],
+        "mythes": [
+            "th_sl_SI_v2.dat",
+            "th_sl_SI_v2.idx"
+        ],
+        "name": "Slovene"
+    },
+    {
+        "639-1": "sq_AL",
+        "code": "sq",
+        "hunspell": [
+            "sq_AL.aff",
+            "sq_AL.dic"
+        ],
+        "name": "Albanian"
+    },
+    {
+        "639-1": "sr",
+        "code": "sr",
+        "hunspell": [
+            "sr-Latn.aff",
+            "sr-Latn.dic",
+            "sr.aff",
+            "sr.dic"
+        ],
+        "hyphen": [
+            "hyph_sr-Latn.dic",
+            "hyph_sr.dic"
+        ],
+        "name": "Serbian"
+    },
+    {
+        "639-1": "sv_SE",
+        "code": "sv",
+        "hunspell": [
+            "sv_FI.aff",
+            "sv_FI.dic",
+            "sv_SE.aff",
+            "sv_SE.dic"
+        ],
+        "hyphen": [
+            "hyph_sv.dic"
+        ],
+        "mythes": [
+            "th_sv_SE.dat",
+            "th_sv_SE.idx"
+        ],
+        "name": "Swedish"
+    },
+    {
+        "639-1": "sw_TZ",
+        "code": "sw",
+        "hunspell": [
+            "sw_TZ.aff",
+            "sw_TZ.dic"
+        ],
+        "name": "Swahili"
+    },
+    {
+        "639-1": "te_IN",
+        "code": "te",
+        "hunspell": [
+            "te_IN.aff",
+            "te_IN.dic"
+        ],
+        "hyphen": [
+            "hyph_te_IN.dic"
+        ],
+        "name": "Telugu"
+    },
+    {
+        "639-1": "th_TH",
+        "code": "th",
+        "hunspell": [
+            "th_TH.aff",
+            "th_TH.dic"
+        ],
+        "name": "Thai"
+    },
+    {
+        "639-1": "tr_TR",
+        "code": "tr",
+        "hunspell": [
+            "tr_TR.aff",
+            "tr_TR.dic"
+        ],
+        "name": "Turkish"
+    },
+    {
+        "639-1": "uk_UA",
+        "code": "uk",
+        "hunspell": [
+            "uk_UA.aff",
+            "uk_UA.dic"
+        ],
+        "hyphen": [
+            "hyph_uk_UA.dic"
+        ],
+        "mythes": [
+            "th_uk_UA.dat",
+            "th_uk_UA.idx"
+        ],
+        "name": "Ukrainian"
+    },
+    {
+        "639-1": "vi",
+        "code": "vi",
+        "hunspell": [
+            "vi_VN.aff",
+            "vi_VN.dic"
+        ],
+        "name": "Vietnamese"
+    },
+    {
+        "639-1": "zu_ZA",
+        "code": "zu",
+        "hyphen": [
+            "hyph_zu_ZA.dic"
+        ],
+        "name": "Zulu"
+    }
+]

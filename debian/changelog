@@ -1,0 +1,1055 @@
+libreoffice-dictionaries (1:7.2.0-1) unstable; urgency=medium
+
+  * New upstream version 7.2.0
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 19 Aug 2021 18:25:15 +0200
+
+libreoffice-dictionaries (1:7.2.0~rc1-1) experimental; urgency=medium
+
+  [ Rene Engelhard ]
+  * New upstream version 7.2.0~rc1
+
+  [ Mattia Rizzolo ]
+  * d/copyright: remove spurious U+2028 (LINE SEPARATOR) characters.
+    (Closes: #990484)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 11 Jul 2021 09:23:54 +0200
+
+libreoffice-dictionaries (1:7.1.0~rc3-3) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * Follow a renamed lintian tag.
+
+  [ Andrej Shadura ]
+  * Update the Slovak dictionary patch from the upstream, with further fixes
+    on top of the last upload.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Wed, 10 Feb 2021 12:45:00 +0100
+
+libreoffice-dictionaries (1:7.1.0~rc3-2) unstable; urgency=medium
+
+  * Add patch from upstream's upstream to fix an incorrect rule
+    in the sk_SK hunspell dict.  Closes: #982152
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 09 Feb 2021 19:46:14 +0100
+
+libreoffice-dictionaries (1:7.1.0~rc3-1) unstable; urgency=medium
+
+  * New upstream version 7.1.0~rc3
+
+  * stop recoding it_IT.dic, now recoded upstream
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 27 Jan 2021 23:26:24 +0100
+
+libreoffice-dictionaries (1:7.1.0~rc2-2) unstable; urgency=medium
+
+  * actually build-depend on recode...
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 15 Jan 2021 07:38:45 +0100
+
+libreoffice-dictionaries (1:7.1.0~rc2-1) unstable; urgency=medium
+
+  * New upstream version 7.1.0~rc2
+
+  * recode it_IT.dic to UTF-8 (closes: #979439)
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 14 Jan 2021 22:08:27 +0100
+
+libreoffice-dictionaries (1:7.1.0~rc1-1) unstable; urgency=medium
+
+  * New upstream version 7.1.0~rc1
+  * update for es/pt_PT dictionary name changes
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 01 Jan 2021 14:04:37 +0100
+
+libreoffice-dictionaries (1:7.0.1-1) unstable; urgency=medium
+
+  * New upstream version 7.0.1
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 01 Sep 2020 10:15:07 +0200
+
+libreoffice-dictionaries (1:7.0.0-1) unstable; urgency=medium
+
+  * New upstream version 7.0.0
+  * fix dictionaries/sl_SI/package-description.txt
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 01 Aug 2020 12:34:06 +0200
+
+libreoffice-dictionaries (1:6.4.3-1) unstable; urgency=medium
+
+  * New upstream version 6.4.3
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 14 Apr 2020 16:22:54 +0200
+
+libreoffice-dictionaries (1:6.4.0~rc2-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * New upstream version 6.4.0~rc2.
+  * Drop obsolete alternative dependency on python-uno.  Closes: #943096
+  * Update copyright.
+
+  [ Rene Engelhard ]
+  * Remove obsolete python3.patch.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 19 Jan 2020 10:27:15 +0100
+
+libreoffice-dictionaries (1:6.3.4-1) unstable; urgency=medium
+
+  * New upstream version 6.3.4
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 05 Dec 2019 22:12:12 +0100
+
+libreoffice-dictionaries (1:6.3.3-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * d/control: Replace 'an <language>' with 'the <language>' in the mythes
+    descriptions, to prevent cacophonic sounds.
+  * Add patch to add Python3 support, and use it. (Closes: #943096)
+
+  [ Rene Engelhard ]
+  * New upstream version 6.3.3
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 30 Nov 2019 10:13:37 +0100
+
+libreoffice-dictionaries (1:6.3.1-1) unstable; urgency=medium
+
+  * New upstream version 6.3.1
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 01 Sep 2019 20:21:07 +0200
+
+libreoffice-dictionaries (1:6.3.0-1) unstable; urgency=medium
+
+  * New upstream version 6.3.0
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 05 Aug 2019 20:55:16 +0200
+
+libreoffice-dictionaries (1:6.3.0~rc1-1) unstable; urgency=medium
+
+  * New upstream version 6.3.0~rc1
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 06 Jul 2019 09:44:45 +0200
+
+libreoffice-dictionaries (1:6.2.0-1) unstable; urgency=medium
+
+  * New upstream version 6.2.0.
+  * Fix dangling links accidentally created in the previous version.
+    Closes: #918318
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 12 Feb 2019 14:12:56 +0100
+
+libreoffice-dictionaries (1:6.2.0~rc2-1) unstable; urgency=medium
+
+  * New upstream version 6.2.0~rc2.
+    + Drop patch fixing bg_BG encoding, superseded by upstream changes.
+  * helper.py: special case a couple of languages that do odd things.
+  * d/rules:
+    + Drop now unneeded chmod.
+    + Generate links from like hyph_af → hyph_af_ZA in some hyphen
+      packages.  Closes: #918318
+  * Refactor the way we install the files, generating a single rules.install
+    calling dh_install file rather than tons of *.install files.
+  * Update copyright.
+  * Take over the now transitional hunspell-gl-es package, since we are
+    shipping the very same dictionary starting with this version.
+    LP: #1578821; Closes: #824178
+  * Bump Standards-Version to 4.3.0, no changes needed.
+  * Bump debhelper compat level to 12.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Wed, 09 Jan 2019 10:39:09 +0100
+
+libreoffice-dictionaries (1:6.1.3-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * [813f627] d/helper.py: recognise the new language tr_TR.
+
+  [ Rene Engelhard ]
+  * [6f4f7c2] New upstream version 6.1.3
+
+  [ Damyan Ivanov ]
+  * [2ad1c52] patch microsoft-cp1251 → CP1251 in bg_BG dictionaries
+    (Closes: #909577)
+  * [c0bb487] describe fix-bg-encoding patch
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 09 Nov 2018 17:08:42 +0100
+
+libreoffice-dictionaries (1:6.1.3~rc1-1) unstable; urgency=medium
+
+  * [1aeed5b] New upstream version 6.1.3~rc1
+  * [bc9e40b] list.json, debian/copyright: update for new tr_TR dict
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 10 Oct 2018 23:19:46 +0200
+
+libreoffice-dictionaries (1:6.1.1-1) unstable; urgency=medium
+
+  * [61779e5] New upstream version 6.1.1.
+  * [c84f824] d/copyright: Update.
+  * [d09d224] Install README_en_GB.txt in hunspell-en-gb docs.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Fri, 21 Sep 2018 13:08:20 +0200
+
+libreoffice-dictionaries (1:6.1.0~rc2-3) unstable; urgency=medium
+
+  [ Agustin Martin Domingo ]
+  * [4349ecf] Add Breaks+Replaces for dictionaries with outdated versions in
+    other packages, the myspell-* packages will become transitional packages.
+    + hunspell-pt-br → myspell-pt-br  (used to be a Conflicts)
+    + hunspell-pt-pt → myspell-pt-pt  (used to be a Conflicts)
+    + hunspell-ru → myspell-ru
+    + hunspell-sv → hunspell-sv-se (used to be a Conflicts)
+    + Closes: #908146
+
+  [ Mattia Rizzolo ]
+  * [8c6aa03] Build the transitional packages hunspell-sv-se and myspell-sv-se.
+  * [c56d7a6] d/control: Set Rules-Requires-Root:no
+  * [832e88c] d/control: Bump Standards-Version to 4.2.1, no changes needed.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Fri, 07 Sep 2018 14:38:25 +0200
+
+libreoffice-dictionaries (1:6.1.0~rc2-2) unstable; urgency=medium
+
+  * [d739c60] d/control: Bump Standards-Version to 4.2.0, no changes needed.
+  * [4acc4c8] Turn the Conflicts on myspell-bg into a versioned
+    Breaks+Replaces.  Closes: #905441
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 05 Aug 2018 11:52:14 +0200
+
+libreoffice-dictionaries (1:6.1.0~rc2-1) unstable; urgency=medium
+
+  * [61cf25f] New upstream version 6.1.0~rc2
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 19 Jul 2018 23:21:13 +0200
+
+libreoffice-dictionaries (1:6.1.0~rc1-1) experimental; urgency=medium
+
+  * New upstream version 6.1.0~rc1
+
+  * debian/list.json: add hyph_id_ID - new: hyphen-id
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 05 Jul 2018 00:19:30 +0200
+
+libreoffice-dictionaries (1:6.1.0~beta2-1) experimental; urgency=medium
+
+  * [9a328ad] New upstream version 6.1.0~beta2
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 24 Jun 2018 11:41:41 +0000
+
+libreoffice-dictionaries (1:6.1.0~beta1-2) experimental; urgency=medium
+
+  * Include the .install files in the source package.  Closes: #901220
+  * [9c48c83] d/helper.py: recognize id → Indonesian.
+  * [3d0b2fb] Build a transitional myspell-pl package.  Closes: #898749
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 24 Jun 2018 04:12:33 +0200
+
+libreoffice-dictionaries (1:6.1.0~beta1-1) experimental; urgency=medium
+
+  * [05a76ce] New upstream version 6.1.0~beta1
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 24 May 2018 23:40:58 +0200
+
+libreoffice-dictionaries (1:6.1.0~alpha1-1) experimental; urgency=medium
+
+  * [ce97c70] New upstream version 6.1.0~alpha1
+
+  * debian/list.json: add id (Indonesian) - new: hunspell-id, mythes-id
+  * debian/copyright: add dictionaries/id/* stuff
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 26 Apr 2018 07:05:19 +0200
+
+libreoffice-dictionaries (1:6.0.3-3) unstable; urgency=medium
+
+  * [c284471] Bump Breaks+Replaces on hunspell-hr to cover for the version
+    used in Ubuntu.  LP: #1764730
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 17 Apr 2018 17:32:15 +0200
+
+libreoffice-dictionaries (1:6.0.3-2) unstable; urgency=medium
+
+  * hlper.py:
+    + [abf0b86] Add support for the new sq_AL (aka 'sq', aka Albanian) dicts.
+    + [0739d3a] Properly blacklist hunspell-sq, instead of myspell-sq.
+  * list.json:
+    + [a43ac2a] Update for the new Albanian dicts.
+    + [8ff8e8d] Also remove the special-cased en-au and en-ca from here.
+  * [f4b00cd] Take over the myspell-hr binary, and make it a transitional
+    package to our hunspell-hr.
+  * [35a5c42] Take over the hyphen-hr binary package.  Closes: #768278
+  * [d471070] Update d/copyright.
+  * [022a033] Bump Standards-Version to 4.1.4, no changes needed.
+  * [ee43ede] Bump debhelper compat version to 11.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 10 Apr 2018 15:19:33 +0200
+
+libreoffice-dictionaries (1:6.0.3-1) unstable; urgency=medium
+
+  * [719bc8b] New upstream version 6.0.3
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 02 Apr 2018 15:03:11 +0000
+
+libreoffice-dictionaries (1:6.0.0~rc1-1) unstable; urgency=medium
+
+  * [baa3354] New upstream version 6.0.0~rc1
+  * [9c35199] update Vcs-* to salsa
+  * [95160dd] blacklist hunspell-nl, now supposed to be built by dutch
+  * [b2e7827] remove obsolete debian/patches/iceanimals; the "iceanimals"
+    are gone
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 07 Jan 2018 19:45:27 +0100
+
+libreoffice-dictionaries (1:5.4.3-1) unstable; urgency=medium
+
+  * [ac6b656] New upstream version 5.4.3
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 05 Nov 2017 11:43:14 +0000
+
+libreoffice-dictionaries (1:5.4.2-2) unstable; urgency=medium
+
+  * [9c24bca] stop building hunspell-en-{au,ca}, now built by scowl
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 21 Oct 2017 00:01:07 +0200
+
+libreoffice-dictionaries (1:5.4.2-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [9673226] New upstream version 5.4.2
+  * [b33a631] new package: hunspell-gug
+  * [d19c21b] apparently slovnik_data_utf8.txt is gone;
+    update ./dictionary-to-thesaurus.py call
+  * [c87b6bc] fix gug thesaurus install
+  * [43ba2a7] update debian/copyright for hr_HR
+  * [29a0e75] Standards-Version: 4.0.0, remove extra MPL-* paragraph from
+    debian/copyright, now in common-licenses
+
+  [ Mattia Rizzolo ]
+  * [192eda2] Remove transitional myspell-* packages. (Closes: #872706)
+  * [b71ab9e] helper.py: add support mapping for 'bo' (Standard Tibetan).
+  * [043b4bc] helper.py: blacklist building of the new hunspell-bo, already
+    built by src:hunspell-bo
+  * [85a6942] helper.py: gd files have been moved to the language root, drop
+    special casing.
+  * [765d81b] Remove very old lintian overrides concerning only old
+    openoffice.org-dictionaries
+  * [3f51805] Override testsuite-autopkgtest-missing lintian tag.
+  * [7d3f3cd] d/control: Bump Standards-Version to 4.1.1, no changes needed.
+  * [30463dd] d/control: fix capitalization of 'Python'
+  * [264c5e8] d/watch: Use HTTPS.
+  * [d11a9fa] d/rules: temporary ugliness to fix permissions of some files.
+  * [355d3dc,eaab096] Update copyright.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 15 Oct 2017 20:25:31 +0200
+
+libreoffice-dictionaries (1:5.2.5-1) unstable; urgency=medium
+
+  * [4b0c8c2] New upstream version 5.2.5
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 26 Jan 2017 13:20:34 +0100
+
+libreoffice-dictionaries (1:5.2.4-1) unstable; urgency=medium
+
+  * [8b06a1d] New upstream version 5.2.4.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Thu, 12 Jan 2017 13:07:51 +0100
+
+libreoffice-dictionaries (1:5.2.3-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [3dceac5] Imported Upstream version 5.2.3
+
+  [ Mattia Rizzolo ]
+  * [af18d38,7fd2768] Add some more Multi-Arch:foreign markers to the
+    transitional packages.
+  * [1990c95] d/copyright: remove weird U+2028 char.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 13 Nov 2016 16:07:30 +0000
+
+libreoffice-dictionaries (1:5.2.1-2) unstable; urgency=medium
+
+  * [f2b6af0] Bump debhelper compat level to 10.
+    Drop explicit --parallel option, now default.
+  * [4709e46] Mark all non-transitional binary packages as Multi-Arch: foreign.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Thu, 15 Sep 2016 12:17:53 +0000
+
+libreoffice-dictionaries (1:5.2.1-1) unstable; urgency=medium
+
+  * [9d0e17d] Imported Upstream version 5.2.1
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 27 Aug 2016 12:44:35 +0200
+
+libreoffice-dictionaries (1:5.2.0-1) unstable; urgency=medium
+
+  * [4111e51] Imported Upstream version 5.2.0
+  * [fccb7d4] add missing ${misc:Depends} for lo-lightproof-pt-br
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 29 Jul 2016 07:35:56 +0200
+
+libreoffice-dictionaries (1:5.2.0~rc3-2) experimental; urgency=medium
+
+  * give up and package libreoffice-lightproof-pt-br from here. Closes: #824867
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 22 Jul 2016 15:04:37 +0200
+
+libreoffice-dictionaries (1:5.2.0~rc3-1) experimental; urgency=medium
+
+  * [9d75c3d] Imported Upstream version 5.2.0~rc3
+  * [1fb593f] mythes-cs is back; rebuild dat file with official script
+  * [d3a3c57] package new Guarana thesaurus
+  * [b0b7a30] copyright update for cs_CZ thesaurus
+  * [41fed7c] copyright update for gug thesaurus
+  * [3c20300] remove obsolete debian/patches/debian
+  * [85ff4c7] update debian/patches/iceanimals
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 22 Jul 2016 11:49:09 +0200
+
+libreoffice-dictionaries (1:5.1.3-2) unstable; urgency=medium
+
+  [ Gunnar Hjalmarsson ]
+  * [6ee31ce] Build mythes-sv.  Closes: #824234
+
+  [ Mattia Rizzolo ]
+  * [fd810ac] now that myspell-lt is a transitional package,
+    stop conflicting on it and instead add a Breaks/Replaces.  Closes: #824796
+  * [6627c3c] add Breaks/Replaces on the now transitional package
+    openoffice.org-hyphenation-lt
+  * [be4e953] Take over mythes-it from src:mythes-it.  Thanks to Enrico Zini
+    for maintaining mythes-it, and ack'ing the take over.  Closes: #789145
+  * [d3eac80] Make hunspell-es conflicts with myspell-es (the same it does)
+    Closes: #824800
+  * [2916edb] d/hunspell-kmr.links: add links for ku_SY too
+  * [9779fca] Take over the myspell-ku binary.  Closes: #824400
+  * [6cbbcb4] let hunspell-kmr Breaks+Replaces myspell-ku
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sat, 21 May 2016 21:28:54 +0000
+
+libreoffice-dictionaries (1:5.1.3-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [51037a1] Imported Upstream version 5.1.3.
+
+  [ Mattia Rizzolo ]
+  * [8f7583d] d/control.in: Bump Standards-Version to 3.9.8, no changes needed.
+  * [4578b2a] d/helper.py: unblacklist hunspell-ru, we had the ack to take over
+    the binary from src:hunspell-ru.
+    https://lists.debian.org/20160420130948.q5c8bac70@brick.gerasiov.net
+  * [ffc3fba] provide the en-au hyphenation dictionaries as a symlink to the
+    British one.  LP: #105879
+  * [17155c1] d/copyright: update after the new release.
+
+  [ Gunnar Hjalmarsson ]
+  * [fca7241] d/rules: rename dictionary files to include the country code in
+    the file name; is → is_IS. This way they are recognized by LibreOffice.
+  * [67f5f1b] d/*.links: add symlinks so more dictionaries are recognized based
+    on the locale.  Closes: #822617, LP: #1574745
+
+ -- Mattia Rizzolo <mattia@debian.org>  Fri, 13 May 2016 15:40:05 +0000
+
+libreoffice-dictionaries (1:5.1.2-1) unstable; urgency=medium
+
+  * [84c925c] Imported Upstream version 5.1.2
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 05 Apr 2016 01:05:36 +0200
+
+libreoffice-dictionaries (1:5.1.1-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * [70bb749] Fix typo in changelog s/Repleases/Replaces/
+    Thanks to Jakub Wilk <jwilk@debian.org> for reporting
+  * [2c122b4] fix typo in changelog — take 2 s/Repleces/Replaces.
+    Thanks to Jakub Wilk <jwilk@debian.org> for reporting
+
+  [ Rene Engelhard ]
+  * [baf5187] Imported Upstream version 5.1.1
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 07 Mar 2016 21:15:03 +0100
+
+libreoffice-dictionaries (1:5.1.0-2) unstable; urgency=medium
+
+  * [f5ef9b8] Breaks/Replaces all versions prior to 1:5.0.1+dfsg-1, just to
+    ease merging/syncing this package in Ubuntu.
+  * [8b0196e] Stop building hyphen-et, it's already provided by myspell-et,
+    we accidentally took it over.
+  * debian/control:
+    + [ef2e069] Bump Standards-Version to 3.9.7, no changes needed.
+    + [12b0309] Use HTTPS in Vcs-Git.
+  * [56c4de2] debian/copyright: Bump mine and Rene's copyright of debian/*.
+  * [ceb39f9] debian/rules: enable parallel build.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Fri, 04 Mar 2016 00:27:18 +0000
+
+libreoffice-dictionaries (1:5.1.0-1) unstable; urgency=medium
+
+  * [81495d5] Imported Upstream version 5.1.0
+  * [eb97aee] add is hyphen
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 27 Jan 2016 18:16:51 +0100
+
+libreoffice-dictionaries (1:5.0.4-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * [92fda08] debian/control.in: wrap and sort the uploaders list
+  * [8c993a6] debian/{control,copyright}: use my @debian.org email address
+  * [373bdb9] debian/copyright: extend copyright over debian/ for the 2015 too
+
+  [ Rene Engelhard ]
+  * [eb66685] Imported Upstream version 5.0.4
+
+ -- Mattia Rizzolo <mattia@debian.org>  Fri, 18 Dec 2015 19:21:38 +0100
+
+libreoffice-dictionaries (1:5.0.3-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * [3182f27] let hyphen-en-gb provides hyphen-en-za and add a symlink.
+    (Closes: #800490)
+  * [f7faff8] debian/watch: fix it
+
+  [ Rene Engelhard ]
+  * [adbf9b2] Imported Upstream version 5.0.3
+    - fixes encoding of hyph_zu_ZA (closes: #702425)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 24 Oct 2015 20:52:10 +0200
+
+libreoffice-dictionaries (1:5.0.2-2) unstable; urgency=medium
+
+  * [c08decd] remove postinst.in and postrm.in.  They are actually unused
+  * [3ebc464] really let hyphen-no conflicts with myspell-nb (Closes: #799972)
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Thu, 24 Sep 2015 22:30:23 +0000
+
+libreoffice-dictionaries (1:5.0.2-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [d4b61b9] Imported Upstream version 5.0.2
+
+  [ Agustin Martin ]
+  * [0324ce3] fix typo in dependencies of myspell-sl transitional package:
+    hunspell-th → hunspell-sl.  (Closes: #799855)
+
+  [ Mattia Rizzolo ]
+  * [fa03cbc] breaks/replaces a more recent version of several myspell-*
+    packages.  I was previously breaking against the source version of
+    openoffice.org-dictionaries, but the binaries had a different version.
+    (Closes: #799845)
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Wed, 23 Sep 2015 14:04:58 +0000
+
+libreoffice-dictionaries (1:5.0.1+dfsg-3) unstable; urgency=medium
+
+  * [1f49aa6] do not build hunspell-et, already provided by myspell-et
+    and up-to-date there
+  * [feaa2eb] pt-br should be pt-br, not just pt
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Mon, 21 Sep 2015 20:58:24 +0200
+
+libreoffice-dictionaries (1:5.0.1+dfsg-2) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [13ba271] fix -de-at and -de-ch descriptions to German (Austria) and
+    German (Switzerland).
+  * [2f402f0] also correct various English descriptions to English (<country>).
+  * [a7b5705] add Chris Halls <halls@debian.org> back to Uploaders.
+  * change Maintainer to
+    Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+
+  [ Mattia Rizzolo ]
+  * Stop building some packages:
+    + [2969551] hunspell-ca: it just got its own package.
+    + [bbe547e] hyphen-hr: already in the myspell-hr source
+    + [c38513a] {hunspell,hyphen}-lv: are already provided by src:myspell-lv
+  * [5f00918] correct a typo in a RFC639-2 code, from hrr to hr.
+  * [a75e22a] take over myspell-sl, it's orphaned and outdated compared to us.
+  * [4622f28,eae9f5c,421e765] Add a bunch of transitional package from
+    myspell-* to hunspell-* and Breaks+Replaces the old versions.  This is
+    needed to complete the transition to the openoffice.org-dictionaries source
+    package.  This can be safely reverted after the stretch release.
+  * [0b96262] Conflicts: on several myspell-* packages which contain files
+    already shipped by this package.  Closes: #799440
+  * [8cb88df] Conflicts: on 3 hyphen-* packages, given that there are myspell-*
+    packages providing hyphenation patterns...  Closes: #799481
+    Thanks to Ralf Treinen and his automated checks!
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Sat, 19 Sep 2015 14:12:03 +0000
+
+libreoffice-dictionaries (1:5.0.1+dfsg-1) unstable; urgency=medium
+
+  * [dec712a,d04a522,af8ac59] Imported Upstream version 5.0.1~rc1+dfsg
+    + Closes: #283392, #429725, #515867, #624249, #650695, #655201, #757781
+      Closes: #771438, #773971
+  * [d6aaf55] debian/source/format: set to 3.0 (quilt).
+  * debian/control*
+    + [3cd730a] remove Chris Halls <halls@debian.org> from uploaders.
+    + [34a3327] drop the huge control file. I'll autogenerate it.
+    + [6bd7403] use debhelper 9. drop build-dep on dpatch (moving to quilt).
+    + [3bb6baf] bump standards-version to 3.9.6.
+    + [715582b] add myself to uploaders.
+    + [32e15db] Homepage and Vcs-{Git,Browser} fields.
+    + [e5158d9] let all packages suggests libreoffice-writer, but nothing more.
+      (Closes: #768258, #768281)
+    + [b551a93] drop all openoffice.org-*-* provides.
+  * [4b8cfbb] debian/rules: greatly semplify:
+    + use the dh sequencer.
+    + move some logic to another helper script, for things that does not
+      need to be run at build-time.
+    + remove some dead code.
+  * [99515ff,99d8a66,b2081ff] drop all myspell-related files and related code
+    in rules, we are not building myspell dictionaries anymore.
+  * [5e5d39b] drop hunspell-fr related files, as requested (packaged in
+    another source) (Closes: #721643).
+  * [1d14dd1] drop all *.install files. I'll autogenerate them.
+  * [654b6d3,0db2211] *.links: updatated the ones still needed.
+    + This update also closes: #566815 as a side effect.
+  * [be82ba3] drop Provides: mythes-en-gb from the mythes-en-us package
+    Closes: #749204
+  * [7cd39fc] drop sh-related files (Serbo-Croatian). no more included upstream.
+  * [e6b4f15,35cddab,f8811a3,3398a9e] add an helper script and a json file with
+    information on the package, and to generate debian/control and
+    debian/*.install before uploading (or building from the vcs).
+  * debian/copyright:
+    + [872f0f5] drop all .copyright files. They are outdated for sure.
+    + [d9dde4c] add debian/copyright:
+      - add dictionaries/cs_CZ/th_cs_CZ_v3.dat to File-Excluded (commercial
+        use not allowed)
+  * patches:
+    + [4391aca] convert some patches from dpatch to quilt, and refresh them.
+    + [a07883f] refresh. drop the old ones, if they are still needed someone
+      will complain
+    + [599eefa] fix-thai-encoding: add to fix a wrong header. (Closes: #660600)
+    + [bf35cdd] iceanimals: fix quilt-patch-missing-description lintian tag.
+  * [8548888] debian/{watch,upstream/signing-key.asc}: add.
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Tue, 18 Aug 2015 15:06:35 +0000
+
+openoffice.org-dictionaries (1:3.3.0~rc10-4) unstable; urgency=low
+
+  * provide also myspell-dictionary-en-xy for myspell-en-*/hunspell-en-ca
+    (closes: #680485)
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 09 Jul 2012 20:10:05 +0200
+
+openoffice.org-dictionaries (1:3.3.0~rc10-3) unstable; urgency=low
+
+  * remove conflicts against openoffice.org-{thesaurus ,hyphenation}-*
+    again as we now have transitional packages for them
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 11 Mar 2011 11:10:23 +0100
+
+openoffice.org-dictionaries (1:3.3.0~rc10-2) unstable; urgency=low
+
+  * upload to unstable
+  * version binary packages 1:3.3.0-x
+  * OpenOffice.org -> LibreOffice/OpenOffice.org; fixup -frami
+    Descriptions
+  * actually add comflicts/replaces/provides
+  * recommend libreoffice-writer | openoffice.org-writer in hyphen-*
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 06 Feb 2011 19:46:02 +0000
+
+openoffice.org-dictionaries (1:3.3.0~rc10-1) experimental; urgency=low
+
+  * new upstream release candidate
+  * rename openoffice.org-thesaurus-* -> mythes-*;
+    rename openoffice.org-hyphenation-* -> hyphen-*
+  * provide mythes-thesaurus(-xx) instead of openoffice.org2-thesaurus-(xx)
+  * provide hyphen-hyphenation-patterns instead of openoffice.org-hyphenation
+  * add ${misc:Depends}
+  * allow LibreOffice in Depends:
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 19 Jan 2011 22:33:47 +0100
+
+openoffice.org-dictionaries (1:3.3.0~rc9-1) experimental; urgency=low
+
+  * new upstream release candidate
+  * includes fixes for serbian hyphenation patterns (closes: #590615)
+  * remove 02_Debian.dpatch; LibreOffices new technical.dic already containbs
+    it
+  * include "gedurft" in de_DE_frami.dic (closes: #607771)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 09 Jan 2011 16:53:18 +0100
+
+openoffice.org-dictionaries (1:3.2.1-2) unstable; urgency=high
+
+  * fix hunspell-fr install for new dict name in 3.2.1 (closes: #587908)
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 02 Jul 2010 16:40:30 +0200
+
+openoffice.org-dictionaries (1:3.2.1-1) unstable; urgency=high
+
+  * OpenOffice.org 3.2.1
+  * use th_gen_idx.pl from libmythes-dev
+  * register fr thesaurus and hyphenation (like hunspell-fr) also
+    for BE, CA, CH, MC, LU (closes: #585979)
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 17 Jun 2010 00:43:24 +0200
+
+openoffice.org-dictionaries (1:3.2.0~rc2-5) unstable; urgency=medium
+
+  * revert
+    "make myspell-en-za depend on -en-gb , use en_GB.aff for en_ZA.aff",
+   thanks Stefano Rivera (closes: #583795)
+  * add explicit debian/source/format
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 31 May 2010 00:33:35 +0200
+
+openoffice.org-dictionaries (1:3.2.0~rc2-4) unstable; urgency=low
+
+  * fix compat symlinks for openoffice.org-thesaurus-fr
+  * fix openoffice.org-thesaurus-cas install
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 20 Apr 2010 11:50:40 +0200
+
+openoffice.org-dictionaries (1:3.2.0~rc2-3) unstable; urgency=medium
+
+  * merge from Ubuntu:
+    - add proper /usr/share/myspell/dicts links for fr_FR (closes: #577678)
+  * fix french thesaurus installation (closes: #578390)
+  * version binaries 1:3.2.0-x
+  * register hyph_de_DE.dic for all de_*
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 19 Apr 2010 18:31:55 +0200
+
+openoffice.org-dictionaries (1:3.2.0~rc2-2) unstable; urgency=low
+
+  * version binary packages 3.2.0-x
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 11 Feb 2010 14:15:33 +0100
+
+openoffice.org-dictionaries (1:3.2.0~rc2-1) unstable; urgency=medium
+
+  * OpenOffice.org 3.2.0 rc2 (OOO320_m9)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 16 Jan 2010 16:58:24 +0100
+
+openoffice.org-dictionaries (1:3.2.0~beta-1) unstable; urgency=low
+
+  * OpenOffice.org 3.2.0 beta (OOO320_m2)
+    - updates (amongst others) da_DK dicts (closes: #547654)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 01 Nov 2009 19:20:51 +0100
+
+openoffice.org-dictionaries (1:3.1.0-4) unstable; urgency=low
+
+  * make myspell-en-za depend on -en-gb , use en_GB.aff for en_ZA.aff
+    (closes: #536643)
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 06 Oct 2009 10:27:57 +0200
+
+openoffice.org-dictionaries (1:3.1.0-3) unstable; urgency=low
+
+  * also move dicts to /usr/share/hunspell. wih compat symlinks. No idea
+    why I missed that in the last upload...
+  * en passant, fix bogus th-TH.aff symlink
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 18 Aug 2009 23:14:22 +0200
+
+openoffice.org-dictionaries (1:3.1.0-2) unstable; urgency=low
+
+  * move mythes and hyphen stuff to /usr/share/mythes and /usr/share/hyphen
+  * only recommend openoffice.org (>= 1.0.3) | openoffice.org-writer
+    at openoffice.org-hyphenation-*
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 12 Aug 2009 00:06:08 +0200
+
+openoffice.org-dictionaries (1:3.1.0-1) unstable; urgency=low
+
+  * OpenOffice.org 3.1.0 final release
+  * new: openoffice.org-{hyphenation,thesaurus}-fr
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 06 May 2009 01:27:38 +0200
+
+openoffice.org-dictionaries (1:3.1.0~ooo310m5-3) experimental; urgency=low
+
+  * add missing fr_MC symlink (closes: #523643)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 11 Apr 2009 20:01:27 +0200
+
+openoffice.org-dictionaries (1:3.1.0~ooo310m5-2) experimental; urgency=low
+
+  * provide hunspelll-dictionary-vi and not -fr at hunspell-vi
+    (closes: #520691)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 22 Mar 2009 11:46:45 +0100
+
+openoffice.org-dictionaries (1:3.1.0~ooo310m5-1) experimental; urgency=low
+
+  * new upstream snapshot
+    - includes en_CA dictionary - new package: hunspell-en-ca
+      (closes: #478113, #419095)
+    - other new packages: {hunspell,openoffice.org-hyphenation}-{sr,sh}
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 12 Mar 2009 18:01:13 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-6) unstable; urgency=low
+
+  * guard update-openoffice-dicts call witn -x (closes: #518975)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 11 Mar 2009 23:32:49 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-5) unstable; urgency=low
+
+  * remove bogus myspell-fr-* conflict at hunspell-vi and hunspell-hu
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 02 Mar 2009 02:14:16 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-4) unstable; urgency=low
+
+  * hunspell-hu: conflic/provide/replace myspell-hu (closes: #517353)
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 02 Mar 2009 01:19:34 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-3) unstable; urgency=low
+
+  * upload to unstable
+  * fix openoffice.org-hyphenation-af.copyright
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 15 Feb 2009 17:55:45 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-2) experimental; urgency=low
+
+  * upload as 3.0.1-x
+  * fix typo in -en-zas description
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 05 Feb 2009 00:39:00 +0100
+
+openoffice.org-dictionaries (1:3.0.1~rc1-1) experimental; urgency=low
+
+  * OpenOffice.org 3.0.1 rc1 (OOO300_m14)
+  * new packages: hunspell-hu and openoffice.org-thesaurus-hu
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 20 Dec 2008 16:47:25 +0100
+
+openoffice.org-dictionaries (1:3.0.0-3) experimental; urgency=low
+
+  * fix typo in description - s/hunpell/hunspell/ (closes: #505809)
+  * register th_en_US_v2 also for en CA (closes: #479328)
+  * cleanup diff.gz; lintian fixes
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 17 Nov 2008 14:42:11 +0100
+
+openoffice.org-dictionaries (1:3.0.0-2) experimental; urgency=low
+
+  * also register hunspell-fr for fr-MC
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 19 Oct 2008 11:55:31 +0200
+
+openoffice.org-dictionaries (1:3.0.0-1) experimental; urgency=low
+
+  * new upstream release.
+  * register hunspell-fr also for fr_BE, fr_CA, fr_CH and fr_LU
+    (closes: #502654)
+  * add set -e to postrm, thanks lintian
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 19 Oct 2008 03:12:30 +0200
+
+openoffice.org-dictionaries (1:2.4.0~m240-2) unstable; urgency=low
+
+  * version binary packages 1:2.4.0-2
+  * package hunspell-fr
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 26 Apr 2008 22:51:34 +0200
+
+openoffice.org-dictionaries (1:2.4.0~m240-1) unstable; urgency=low
+
+  * new upstream milestone
+    - updates it_IT dictionary (closes: #329971)
+    - new: openoffice.org-thesaurus-{ne,ru}, openoffice.org-hyphenation-zu,
+      myspell-en-za, hunspell-ne, hunspell-da
+  * debian/myspell-it.copyright: update, now GPLv3
+  * debian/openoffice.org-hyphenation-{af,de,hu}: UTF-8'ize, thanks lintian
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 20 Dec 2007 14:47:44 +0100
+
+openoffice.org-dictionaries (1:2.3.0~src680m225-2) unstable; urgency=low
+
+  * fix openoffice.org-hyphenation-its dictionary.lst entry (closes: #443367)
+  * fix openoffice.org-hyphenation-{af,sl}s copyright
+  * name binary packages 1:2.3.0-x (differences between SRC680_m225 and
+    2.3.0 is just pl_PL hyph/dict (packaged externally) and DicOOo
+    (openoffice.org-common)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 22 Sep 2007 22:03:57 +0200
+
+openoffice.org-dictionaries (1:2.3.0~src680m225-1) unstable; urgency=low
+
+  * new snapshot
+    - new: openoffice.org-hyphenation-af, openoffice.org-hyphenation-sl
+      (myspell-sl already packaged externally)
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 06 Aug 2007 01:22:11 +0200
+
+openoffice.org-dictionaries (1:2.3.0~src680m219-2) unstable; urgency=low
+
+  * new hyph_it_IT.dic from issue 75287
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 13 Jul 2007 23:42:19 +0200
+
+openoffice.org-dictionaries (1:2.3.0~src680m219-1) unstable; urgency=low
+
+  * new snapshot
+    - new dictionary: af_ZA -> myspell-af
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 05 Jul 2007 15:02:01 +0200
+
+openoffice.org-dictionaries (1:2.2.0-2) unstable; urgency=low
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 11 Apr 2007 13:37:39 +0200
+
+openoffice.org-dictionaries (1:2.2.0-1) experimental; urgency=low
+
+  * new upstream release
+  * add the Iceanimals to en_US.dic (closes: #385183)
+  * add fixed hyph_it_IT.dic from i75287.
+
+ -- Rene Engelhard <rene@debian.org>  Mon,  2 Apr 2007 01:06:21 +0200
+
+openoffice.org-dictionaries (1:2.0.2.99.2.0.3rc5-3) unstable; urgency=low
+
+  * apply patch from Mike Hommey to update en-US.dic to Firefox 2.0b2 changes,
+    thanks (closes: #385507)
+  * add "Debian" to en_GB.dic (closes: #385183)
+  * upload as 2.0.4~rc1-x binary packages
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 10 Sep 2006 08:43:50 +0200
+
+openoffice.org-dictionaries (1:2.0.2.99.2.0.3rc5-2) unstable; urgency=low
+
+  * re-upload with 2.0.3-x binary packages, no changes here since rc5
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 29 Jun 2006 17:01:13 +0200
+
+openoffice.org-dictionaries (1:2.0.2.99.2.0.3rc5-1) unstable; urgency=low
+
+  * new upstream release candidate.
+  * build openoffice.org-thesarus-sk
+  * Standards-Version: 3.7.2 (no changes needed)
+  * Build-Depends-Indep -> Build-Depends
+  * add sw.{dic.aff} and th.{dic.aff} symlinks to make Mozilla (Thunderbird)
+    show proper language/country names in the dropdown
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 14 Jun 2006 14:21:43 +0200
+
+openoffice.org-dictionaries (1:2.0.1+2.0.2rc1-3) unstable; urgency=low
+
+  * The "too-greedy-seds-are-bad" release.
+  * Fix -cs' description.
+
+ -- Rene Engelhard <rene@debian.org>  Mon,  6 Mar 2006 23:41:31 +0100
+
+openoffice.org-dictionaries (1:2.0.1+2.0.2rc1-2) unstable; urgency=low
+
+  * upload to unstable; call the binary packages 2.0.2-x (no differences
+    between rc1 and final in dictionaries/)
+  * fix typos
+  * readd lost changelog piece
+  * register -hyphenation-de also for de_CH and de_AT
+
+ -- Rene Engelhard <rene@debian.org>  Mon,  6 Mar 2006 22:35:43 +0100
+
+openoffice.org-dictionaries (1:2.0.1+2.0.2rc1-1) experimental; urgency=low
+
+  * update to 2.0.2rc1
+  * readd de_DE hyphenation, README/license statement fixed
+  * add openoffice.org-hyphenation-hu
+  * make openoffice.org-thesaurus-en-us register itself for en_GB, too and
+    provide openoffice.org-thesaurus-en-gb (closes: #280992)
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 21 Feb 2006 21:19:23 +0100
+
+openoffice.org-dictionaries (1:2.0.0+2.0.1rc-2) unstable; urgency=low
+
+  * upload to unstable; name binary packages 2.0.1-x
+
+ -- Rene Engelhard <rene@debian.org>  Wed,  4 Jan 2006 12:29:03 +0100
+
+openoffice.org-dictionaries (1:2.0.0+2.0.1rc-1) experimental; urgency=low
+
+  * update to SRC680_m142 aka 2.0.1rc; build openoffice.org-thesaurus-cs
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 25 Nov 2005 17:14:50 +0100
+
+openoffice.org-dictionaries (1:2.0.0-1) unstable; urgency=low
+
+  * Update to OOo 2.0 final release.
+  * build myspell-sw
+  * build myspell-th, suggest openoffice.org-core (>= 1.9.126) since there thai
+    support was added to sal
+  * build also myspell-en-us, myspell-en-gb and myspell-it
+  * rename openoffice.org2-thesaurus-en-us back to
+    openoffice.org-thesaurus-en-us and Conflict/Replace/Provide the former.
+  * remove the hyphenation stuff from the .orig.tar.gz here also
+  * umm. add proper copyright files...
+  * remove sharutils from Build-Depends, not needed anymore
+  * Standards-Version: 3.6.2 (no chagnes needed)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 22 Oct 2005 03:42:48 +0200
+
+openoffice.org2-dictionaries (1.9.121+cvs20050804-1) experimental; urgency=low
+
+  * update to cws_src680_thesaurus20, now based on WordNet 2.1
+
+ -- Rene Engelhard <rene@debian.org>  Thu,  4 Aug 2005 18:37:02 +0200
+
+openoffice.org2-dictionaries (1.9.109-1) experimental; urgency=low
+
+  * update for OOo2
+  * build openoffice.org2-thesaurus-en-us from here
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 15 Jun 2005 02:18:46 +0200
+
+openoffice.org-dictionaries (20050823-1) unstable; urgency=low
+
+  * Remove the openoffice.org-hyphenation-* packages.
+    - The license on the files is "unclear". The hyphenation patterns
+      are considered to be code (written in TeX/LaTeX), licensed under
+      the GPL or the LPPL. For some reason, they appear to be relicensed
+      without reason under the LGPL.
+    - The hyphenation packages are unreasonable small, the packaging
+      should be changed, afteer the license issues have been sorted out.
+  * The hyphenation patterns together with other OOo language data can
+    be downloaded from http://lingucomponent.openoffice.org/auto_instal.html
+    or http://lingucomponent.openoffice.org/manual_instal.html.
+  * Update standards version.
+  * Remove the CVS directories.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 23 Aug 2005 19:01:35 +0200
+
+openoffice.org-dictionaries (20030813-3) unstable; urgency=high
+
+  * temporarily let *-hyphenation-* in contrib... (upload to
+    main was (with sense) rejected because of the small size; will
+    be addressed later; just want to get this important fix out and
+    into sarge...
+  * fix dictionary.lst entry for italian hyphenation, thanks
+    Marco Menardi (closes: #243585)
+  * actually add a 00list file to actually apply the patch....
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 22 Apr 2004 05:57:11 +0200
+
+openoffice.org-dictionaries (20030813-2) unstable; urgency=low
+
+  * move to main
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 17 Oct 2003 12:26:10 +0200
+
+openoffice.org-dictionaries (20030813-1) unstable; urgency=low
+
+  * CVS co from 13.08.2003, OOo 1.1rc3 branch
+    - new package: openoffice.org-hyphenation-it
+  * add forgotten symlinks
+  * made short descriptions better english and more in sync
+    with the most {a,i}spell dictionary descriptions
+  * add Provides: openoffice.org-hyphenation-en to -hyphenation-en-{gb,us}
+    and Provides: openoffice.org-hyphenation to all
+    openoffice.org-hyphenation-*
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 13 Aug 2003 03:23:34 +0200
+
+openoffice.org-dictionaries (20030617-1) unstable; urgency=low
+
+  * Initial Release. (closes: #202930)
+  * split the dictionaries out of openoffice.org
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 17 Jun 2003 19:33:47 +0200
